@@ -9,7 +9,7 @@ from Pages.DetailPage import DetailPage
 class MainPage:
     def __init__(self):
         self.win = tk.Tk()
-        self.win.title('Covid-19 vaccine')
+        self.win.title('Covid-19 vaccine ')
         self.win.geometry('800x400')  # 寬x高
         self.win.iconphoto(True, tk.PhotoImage(file='./vaccine.png'))
         self.win.resizable(False, False)

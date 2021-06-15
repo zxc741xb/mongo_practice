@@ -14,7 +14,7 @@ class DBMgr:
         return result
 
     def query(self, key, value):
-        result = self.collection.find_one({key: value})
+        result = self.collection.find_one({key: value}, {'id': 0})
         return result
 
     def modify(self, myQuery, newValue):

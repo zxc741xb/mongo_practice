@@ -27,24 +27,28 @@ class InsertPage:
         key_label = tk.Label(self.frame, text='name', bg='white', fg='black', font=('微軟正黑體', 12))
         key_label.pack()
 
-        value_entry = tk.Entry(self.frame, textvariable=self.value, width=80)
+        value_entry = tk.Entry(self.frame, textvariable=self.value, width=40)
         value_entry.pack()
 
         key2_label = tk.Label(self.frame, text='country', bg='white', fg='black', font=('微軟正黑體', 12))
         key2_label.pack()
 
-        value2_entry = tk.Entry(self.frame, textvariable=self.value2, width=80)
+        value2_entry = tk.Entry(self.frame, textvariable=self.value2, width=40)
         value2_entry.pack()
+
+        dash_label = tk.Label(self.frame, text='-----------------------------------------------------', bg='white', fg='black',
+                              font=('微軟正黑體', 12))
+        dash_label.pack(pady=10)
 
         key2_label = tk.Label(self.frame, text='其他資訊(eg. 併發症,適用對象)：自行輸入', bg='white', fg='black', font=('微軟正黑體', 12))
         key2_label.pack()
-        key2_entry = tk.Entry(self.frame, textvariable=self.key3, width=80)
+        key2_entry = tk.Entry(self.frame, textvariable=self.key3, width=40)
         key2_entry.pack()
 
         value3_label = tk.Label(self.frame, text='其他資訊內容', bg='white', fg='black', font=('微軟正黑體', 12))
         value3_label.pack()
-        value3_entry = tk.Entry(self.frame, textvariable=self.value3, width=80)
+        value3_entry = tk.Entry(self.frame, textvariable=self.value3, width=40)
         value3_entry.pack()
 
         button = tk.Button(self.frame, text="確認", bg='white', fg='black', font=('微軟正黑體', 12), command=self.insert)
-        button.pack(pady=60)
+        button.pack(pady=40)
